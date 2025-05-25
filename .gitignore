@@ -1,0 +1,39 @@
+# Ignore output and temp files
+output/
+*.tmp
+*.log
+*.bak
+
+# Ignore Python cache and environment files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.pdb
+*.egg-info/
+.venv/
+env/
+venv/
+build/
+dist/
+
+# Ignore IDE/editor files
+.vscode/
+.idea/
+
+# Ignore data files (optional)
+data/
+
+# Ignore Hadoop output (optional)
+hadoop_output/
+
+# Ignore documentation and markdown files
+*.md
+*.txt
+
+# Optional: ignore workflows YAML (if you want to avoid GitHub Actions triggering from workflow file changes)
+.github/workflows/*.yml
+
+# Optional: ignore shell and PowerShell scripts
+*.sh
+*.ps1
