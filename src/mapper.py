@@ -3,6 +3,7 @@ import sys
 import pandas as pd
 import pyarrow.parquet as pq
 
+
 def process_parquet(file_path):
     try:
         table = pq.read_table(file_path)
@@ -20,7 +21,9 @@ def process_parquet(file_path):
     except Exception as e:
         print(f"Error reading file {file_path}: {e}", file=sys.stderr)
 
+
 if __name__ == "__main__":
     for line in sys.stdin:
         parquet_file = line.strip()
         process_parquet(parquet_file)
+

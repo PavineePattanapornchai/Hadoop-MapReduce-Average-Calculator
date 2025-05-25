@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 import sys
 
+
 def compute_averages():
     total_fare = total_distance = total_duration = count = 0
 
@@ -22,5 +23,7 @@ def compute_averages():
     else:
         print("No valid data found.")
 
+
 if __name__ == "__main__":
     compute_averages()
+
