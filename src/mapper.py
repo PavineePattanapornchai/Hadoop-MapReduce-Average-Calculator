@@ -16,7 +16,9 @@ def process_parquet(file_path):
             dropoff = row.get('tpep_dropoff_datetime')
             duration = 0
             if pickup and dropoff:
-                duration = (pd.to_datetime(dropoff) - pd.to_datetime(pickup)).total_seconds() / 60
+                duration = (
+                    pd.to_datetime(dropoff) - pd.to_datetime(pickup)
+                ).total_seconds() / 60
             print(f"trip\t{fare},{distance},{duration}")
     except Exception as e:
         print(f"Error reading file {file_path}: {e}", file=sys.stderr)
@@ -26,4 +28,3 @@ if __name__ == "__main__":
     for line in sys.stdin:
         parquet_file = line.strip()
         process_parquet(parquet_file)
-

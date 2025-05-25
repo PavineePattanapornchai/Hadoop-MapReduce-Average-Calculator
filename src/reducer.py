@@ -26,4 +26,3 @@ def compute_averages():
 
 if __name__ == "__main__":
     compute_averages()
-
