@@ -1,0 +1,22 @@
+# Ignore output data
+output/
+
+# Ignore Python cache
+__pycache__/
+*.pyc
+
+# Ignore environment files
+.venv/
+env/
+*.egg-info/
+
+# Ignore IDE/editor files
+.vscode/
+.idea/
+
+# Ignore local datasets if needed
+data/
+
+# Ignore temporary files
+*.log
+*.tmp
