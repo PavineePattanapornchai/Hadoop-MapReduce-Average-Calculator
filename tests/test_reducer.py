@@ -19,3 +19,5 @@ def test_reducer_output():
 if __name__ == "__main__":
     test_reducer_output()
     print("test_reducer.py passed.")
+
+# Temporary trigger for workflow
